@@ -1,0 +1,10 @@
+async function* asyncGenerator1() {
+    yield 1;
+    yield 2;
+    yield 3;
+    }
+    
+    (async () => {
+    for await (const item of asyncGenerator1()) {
+      console.log('Example 1: ${item}');
+    }
